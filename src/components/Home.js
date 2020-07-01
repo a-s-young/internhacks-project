@@ -12,8 +12,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-        <h1>Black History Fact of the Day</h1>
+    <div style={{height: "100vh"}}>
+      <h1>Black History Fact of the Day</h1>
       <h4>{fact.title}</h4>
       <p>{fact.info}</p>
     </div>

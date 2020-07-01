@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import '../App.scss';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -7,12 +7,13 @@ import Protest from "./Protest";
 import Media from "./Media";
 import Home from "./Home";
 
+
 function App() {
   return (
     <div className="App">
       <Router>
         <div>
-          <Navbar bg="dark" expand="lg">
+          <Navbar bg="navbar-bg" expand="lg" variant="dark">
             <Navbar.Brand href="/">BLM Resources</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
