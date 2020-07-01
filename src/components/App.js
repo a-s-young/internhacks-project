@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Protest from "./Protest";
 import Media from "./Media";
 import Home from "./Home";
+import Contact from "./Contact";
+import Donate from "./Donate";
+import Resources from "./Resources";
+import Petitions from "./Petitions";
 
 
 function App() {
@@ -13,14 +17,18 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Navbar bg="navbar-bg" expand="lg" variant="dark">
+          <Navbar bg="navbar-bg" expand="lg" variant="light">
             <Navbar.Brand href="/">BLM Resources</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/Protest">Protest Safety</Nav.Link>
-                <Nav.Link href="/Media">Informative Media</Nav.Link>
+                <Nav.Link href="/donate">Donate</Nav.Link>
+                <Nav.Link href="/petitions">Petitions</Nav.Link>
+                <Nav.Link href="/resources">Resources</Nav.Link>
+                <Nav.Link href="/media">Books, Film, TV</Nav.Link>
+                <Nav.Link href="/protest">Protest</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -33,6 +41,18 @@ function App() {
             </Route>
             <Route path="/media">
               <Media />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/donate">
+              <Donate />
+            </Route>
+            <Route path="/petitions">
+              <Petitions />
+            </Route>
+            <Route path="/resources">
+              <Resources />
             </Route>
             <Route path="/">
               <Home />

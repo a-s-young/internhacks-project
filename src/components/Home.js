@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div style={{height: "100vh"}}>
-      <h1>Black History Fact of the Day</h1>
+      <h1>Black History Fact of the Day: {fact.date}</h1>
       <h4>{fact.title}</h4>
       <p>{fact.info}</p>
     </div>

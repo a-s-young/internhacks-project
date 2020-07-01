@@ -1,36 +1,63 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-async function getDailyFact(){
-    const base = "http://blackhistorydaily.com/on_this_day/June_28/";
-    const infoBase = "http://blackhistorydaily.com/";
+const monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
-    const factInfo = { title: "", info: "" };
+const d = new Date();
+const month = monthNames[d.getMonth()];
+const day = d.getDate();
+const year = d.getFullYear();
+const fullDate = month + " " + day + ", " + year;
 
-    function getLinkAndTitle(){
-      const $ = cheerio.load(request.data);
-      const title = $("h3").first().text();
-      const link = $("h3").first().next().attr()["href"];
-      return {link, title};
-    }
+async function getDailyFact() {
 
-    function getFactInfo() {
-        const $ = cheerio.load(secondRequest.data);
-        const fact = $("p").first().text();
-        factInfo.info = fact;
-        return fact;
-    }
+  const base = `http://blackhistorydaily.com/on_this_day/${month}_${day}/`;
+  const infoBase = "http://blackhistorydaily.com/";
 
-    let request = await axios.get('https://cors-anywhere.herokuapp.com/'+base, {headers: {'Access-Control-Allow-Origin': '*'}});
+  const factInfo = { title: "", info: "" , date: ""};
 
-    let secondRequest = await axios.get('https://cors-anywhere.herokuapp.com/'+infoBase+getLinkAndTitle().link, {headers: {'Access-Control-Allow-Origin': '*'}});
-    
+  function getLinkAndTitle() {
+    const $ = cheerio.load(request.data);
+    const title = $("h3").first().text();
+    const link = $("h3").first().next().attr()["href"];
+    return { link, title };
+  }
 
-    factInfo.title = getLinkAndTitle().title;
-    factInfo.info = getFactInfo();
+  function getFactInfo() {
+    const $ = cheerio.load(secondRequest.data);
+    const fact = $("p").first().text();
+    factInfo.info = fact;
+    return fact;
+  }
 
-    return factInfo; 
+  let request = await axios.get("https://cors-anywhere.herokuapp.com/" + base, {
+    headers: { "Access-Control-Allow-Origin": "*" },
+  });
+
+  let secondRequest = await axios.get(
+    "https://cors-anywhere.herokuapp.com/" + infoBase + getLinkAndTitle().link,
+    { headers: { "Access-Control-Allow-Origin": "*" } }
+  );
+
+  factInfo.title = getLinkAndTitle().title;
+  factInfo.info = getFactInfo();
+  factInfo.date = fullDate;
+
+  return factInfo;
 }
-getDailyFact().then(fact => console.log(fact))
+getDailyFact().then((fact) => console.log(fact));
 
 export default getDailyFact;
