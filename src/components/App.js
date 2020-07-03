@@ -18,11 +18,10 @@ function App() {
       <Router>
         <div>
           <Navbar bg="navbar-bg" expand="lg" variant="light">
-            <Navbar.Brand href="/">BLM Resources</Navbar.Brand>
+            <Navbar.Brand href="/home">BLM Resources</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/donate">Donate</Nav.Link>
                 <Nav.Link href="/petitions">Petitions</Nav.Link>
                 <Nav.Link href="/resources">Resources</Nav.Link>
@@ -32,6 +31,7 @@ function App() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
