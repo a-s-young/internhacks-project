@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  background-color: #28272C;
+  color: #e6e3db;
+}
+
+.Navbar{
+  display: flex;
+  background-color: #E6E3DB;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:active{
+  color: #47352E;
+}
+
+a:visited{
+  color:#47352E;
+}
+
+a:hover{
+  color: #A57456;
+}
