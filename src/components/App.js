@@ -13,16 +13,33 @@ function App() {
   return (
     <div className="App">
       <Router>
-         <nav className="Navbar">
-           <Link to="/home">Home</Link>
-           <Link to="/protest">Protest</Link>
-           <Link to="/media">Media</Link>
+        <div style={{display: "flex", justifyContent: "center"}}>
+        <nav className="Navbar">
+            <div className="LearnBar">
+            <div className="LearnNavHeading">Learn</div>
+            <div className="LearnNavText">
+            <Link to="/home">Black History</Link>
+            <Link to="/resources">Resources</Link>
+            <Link to="/media">Media</Link>
+            </div>
+            
+            </div>
+           
+
+           <div className="ActionBar">
+           <div className="ActionNavHeading">Action</div>
+           <div className="ActionNavText">
            <Link to="/contact">Contact</Link>
            <Link to="/donate">Donate</Link>
            <Link to="/petitions">Petitions</Link>
-           <Link to="/resources">Resources</Link>
+           <Link to="/protest">Protest</Link>
+           </div>
+           
+           </div>
+           
          </nav>
-
+        </div>
+          
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
