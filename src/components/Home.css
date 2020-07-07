@@ -1,0 +1,20 @@
+/*
+Use linear gradient to split the page in half.
+ */
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #28272C 50%, #E6E3DB 50%);
+}
+
+.left {
+    /*
+    text-align: center;
+    align-items: center;
+    margin-right: 15%;
+     */
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /*align-content: center;*/
+}
+
