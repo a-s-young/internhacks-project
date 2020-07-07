@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import getDailyFact from "../apis/dailyfact";
 
+
 export default function Home() {
   const [fact, setFact] = useState({});
 
