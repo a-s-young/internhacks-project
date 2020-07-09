@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
-import getDailyFact from "../apis/dailyfact";
-
+import './Home.css'
 
 export default function Home() {
-  const [fact, setFact] = useState({});
-
-  useEffect(function dailyFact() {
-    getDailyFact().then((fact) => {
-      setFact(fact);
-      console.log(fact);
-    });
-  }, []);
 
   return (
-    <div>
-        <h1>Black History Fact of the Day</h1>
-      <h4>{fact.title}</h4>
-      <p>{fact.info}</p>
+    <div className='body'>
+      <div className="left">
+          <div className = "contentleft">
+            <p>if you want to</p>
+            <h1>learn</h1>
+            <p id="history">history, read, watch, listen</p>
+          </div>
+      </div>
+      <div className="right">
+          <div className = "contentright">
+            <p>if you want to take</p>
+            <h1>action</h1>
+            <p id="sign">sign, donate, protest, call/email</p>
+          </div>
+      </div>
     </div>
   );
 }

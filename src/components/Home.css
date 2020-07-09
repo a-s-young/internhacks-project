@@ -1,0 +1,86 @@
+/*Removes outline when you click in google chrome*/
+*:focus{
+    outline: none;
+}
+/*Turns body into flex-box for buttons
+Makes body the size of the viewport
+*/
+.body {
+    margin: 0 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Stripped down default CSS and sets button to half of the body which is half the viewport*/
+
+
+/*Aligns text on either side of the screen*/
+.left, .right{
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    padding: 0 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+/*Sets text and background color for left button*/
+.left {
+    background-color: #28272C;
+    color: #E6E3DB;
+}
+
+/*Sets text and background color for right button*/
+.right{
+    background-color: #E6E3DB;
+    color: #28272C;
+}
+
+/*Sets fonts for all text*/
+p, h1{
+    font-family: "futura-pt";
+    font-style: normal;
+    margin: 0 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+/*Makes bottom text smaller*/
+#history, #sign{
+    font-size: 15px;
+}
+
+.contentleft,
+.contentright {
+  position: absolute;
+  transition: all .35s ease-in-out;
+  cursor: pointer;
+}
+
+.contentleft {
+  text-align: right;
+  right: 52.5%;
+}
+
+.contentright {
+  text-align: left;
+  left: 52.5%;
+}
+
+
+.contentleft:hover,
+.contentright:hover {
+  transform: scale(1.15);
+}
