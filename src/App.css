@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-a:link{
+.ActionBar a:link{
   text-decoration: none;
 }
 
@@ -25,6 +25,14 @@ a:link{
   color:#28272C;
 }
 
+.ActionBar a:hover{
+  color: #A57456;
+}
+
+.LearnBar a:link{
+  text-decoration: none;
+}
+
 .LearnBar a:active{
   color: #e6e3db;
 }
@@ -33,7 +41,7 @@ a:link{
   color:#e6e3db;
 }
 
-a:hover{
+.LearnBar a:hover{
   color: #A57456;
 }
 

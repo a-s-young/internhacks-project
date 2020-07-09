@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Resources(){
+export default function Watch(){
     return(
         <div style={{height: "100vh", width: "100vw"}}>
-            Resources
+            Watch
         </div>
     );
 }
