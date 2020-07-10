@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import {Switch, Route, Link, BrowserRouter as Router} from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Protest from "./Protest";
 import Read from "./Read";
 import Watch from "./Watch";
@@ -11,71 +11,58 @@ import Resources from "./Resources";
 import Petitions from "./Petitions";
 import BlackHistory from "./BlackHistory";
 import Home from "./Home";
+import NavBar from "./NavBar";
 
 function App() {
+
   return (
     <div className="App">
       <Router>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <nav className="Navbar">
-            <div className="LearnBar">
-              <div className="LearnNavHeading">Learn</div>
-              <div className="LearnNavText">
-                <Link to="/black_history">Black History</Link>
-                <Link to="/read">Read</Link>
-                <Link to="/watch">Watch</Link>
-                <Link to="/listen">Listen</Link>
-              </div>
-            </div>
-
-            <div className="ActionBar">
-              <div className="ActionNavHeading">Action</div>
-              <div className="ActionNavText">
-                <Link to="/contact">Contact</Link>
-                <Link to="/donate">Donate</Link>
-                <Link to="/petitions">Sign</Link>
-                <Link to="/protest">Protest</Link>
-              </div>
-            </div>
-          </nav>
-        </div>
-      
         <Switch>
           <Route path="/protest">
+            <NavBar />
             <Protest />
           </Route>
           <Route path="/read">
+            <NavBar />
             <Read />
           </Route>
           <Route path="/watch">
+            <NavBar />
             <Watch />
           </Route>
           <Route path="/listen">
+            <NavBar />
             <Listen />
           </Route>
           <Route path="/contact">
+            <NavBar />
             <Contact />
           </Route>
           <Route path="/donate">
+            <NavBar />
             <Donate />
           </Route>
           <Route path="/petitions">
+            <NavBar />
             <Petitions />
           </Route>
           <Route path="/resources">
+            <NavBar />
             <Resources />
           </Route>
           <Route path="/black_history">
+            <NavBar />
             <BlackHistory />
           </Route>
           <Route path="/home">
             <Home />
           </Route>
           <Route path="/">
-            <BlackHistory />
+            <Home />
           </Route>
         </Switch>
-        </Router>
+      </Router>
     </div>
   );
 }
