@@ -1,4 +1,5 @@
 import React from "react";
+import "./NavBar.css";
 import {Link} from "react-router-dom";
 
 export default function NavBar(){
@@ -14,7 +15,7 @@ export default function NavBar(){
                   <Link to="/listen">Listen</Link>
                 </div>
               </div>
-  
+
               <div className="ActionBar">
                 <div className="ActionNavHeading">Action</div>
                 <div className="ActionNavText">
