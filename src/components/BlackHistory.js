@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import getDailyFact from "../apis/dailyfact";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+//import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 export default function BlackHistory() {
   const [fact, setFact] = useState({});

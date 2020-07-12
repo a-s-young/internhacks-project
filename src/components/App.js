@@ -7,7 +7,6 @@ import Watch from "./Watch";
 import Listen from "./Listen";
 import Contact from "./Contact";
 import Donate from "./Donate";
-import Resources from "./Resources";
 import Petitions from "./Petitions";
 import BlackHistory from "./BlackHistory";
 import Home from "./Home";
@@ -46,10 +45,6 @@ function App() {
           <Route path="/petitions">
             <NavBar />
             <Petitions />
-          </Route>
-          <Route path="/resources">
-            <NavBar />
-            <Resources />
           </Route>
           <Route path="/black_history">
             <NavBar />
