@@ -1,17 +1,17 @@
 import React from "react";
-import "../App.css";
+import "./App.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import Protest from "./Protest";
-import Read from "./Read";
-import Watch from "./Watch";
-import Listen from "./Listen";
-import Contact from "./Contact";
-import Donate from "./Donate";
-import Resources from "./Resources";
-import Petitions from "./Petitions";
-import BlackHistory from "./BlackHistory";
-import Home from "./Home";
-import NavBar from "./NavBar";
+import Protest from "./pages/Protest";
+import Read from "./pages/Read";
+import Watch from "./pages/Watch";
+import Listen from "./pages/Listen";
+import Contact from "./pages/Contact";
+import Donate from "./pages/Donate";
+import Resources from "./pages/Resources";
+import Petitions from "./pages/Petitions";
+import BlackHistory from "./pages/BlackHistory";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
 
 function App() {
 

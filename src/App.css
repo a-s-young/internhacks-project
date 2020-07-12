@@ -63,6 +63,7 @@
   justify-content: space-evenly;
   align-items: center;
   color: #e6e3db;
+  padding: 5px;
 }
 
 .ActionNavHeading{
@@ -83,6 +84,11 @@
   height: 50%;
   justify-content: space-evenly;
   align-items: flex-end;
+  padding: 5px;
+}
+
+.LearnNavText Link{
+  padding: 10px;
 }
 
 .ActionNavText{
