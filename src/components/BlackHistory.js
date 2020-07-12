@@ -17,7 +17,7 @@ export default function BlackHistory() {
       <h4>{fact.title}</h4>
       <p>{fact.info}</p>
 
-      <iframe
+      {/* <iframe
         title="Playlist"
         width="20%"
         height="300"
@@ -67,7 +67,7 @@ export default function BlackHistory() {
         theme="dark"
         options={{height: "400", width: "30%"}}
       />
-      </div>
+      </div> */}
       
     </div>
   );
