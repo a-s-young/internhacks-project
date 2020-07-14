@@ -1,6 +1,6 @@
 /*Removes outline when you click in google chrome*/
-*:focus {
-  outline: none;
+*:focus{
+    outline: none;
 }
 /*Turns body into flex-box for buttons
 Makes body the size of the viewport
@@ -41,6 +41,19 @@ button {
 .right {
   background-color: #e6e3db;
   color: #28272c;
+}
+
+
+/*Causes tex to grow on hover*/
+/*Causes tex to grow on hover*/
+.leftcontent,
+.rightcontent {
+  transition: all .3s ease-in-out;
+}
+
+.leftcontent:hover,
+.rightcontent:hover {
+  transform: scale(1.2);
 }
 
 /*Sets fonts for all text*/
