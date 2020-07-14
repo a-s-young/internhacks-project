@@ -14,14 +14,14 @@ export default function NavBar(){
               <div className="LearnBar">
                 <div className="LearnNavHeading">Learn</div>
                 <div className="LearnNavText">
-                  <Link to="/black_history">Black History</Link>
+                  <Link as="a" to="/black_history">Black History</Link>
                   <Link to="/read">Read</Link>
                   <Link to="/watch">Watch</Link>
                   <Link to="/listen">Listen</Link>
                   <Link to="/resources">More</Link>
                 </div>
               </div>
-  
+
               <div className="ActionBar">
                 <div className="ActionNavHeading">Action</div>
                 <div className="ActionNavText">
