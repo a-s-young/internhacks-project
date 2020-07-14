@@ -11,11 +11,17 @@ import Petitions from "./Petitions";
 import BlackHistory from "./BlackHistory";
 import Home from "./Home";
 import NavBar from "./NavBar";
+import Resources from "./Resources";
 
 function App() {
+  let bgColor = "#e6e3db";
+
+  if(window.location === "/protest" || window.location === "/petitions" || window.location === "/contact" || window.location === "/donate"){
+    bgColor = "#28272C";
+  }
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: bgColor}}>
       <Router>
         <Switch>
           <Route path="/protest">
@@ -45,6 +51,10 @@ function App() {
           <Route path="/petitions">
             <NavBar />
             <Petitions />
+          </Route>
+          <Route path="/resources">
+            <NavBar />
+            <Resources />
           </Route>
           <Route path="/black_history">
             <NavBar />
