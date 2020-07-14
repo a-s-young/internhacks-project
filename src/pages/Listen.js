@@ -1,9 +1,11 @@
 import React from 'react';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import Title from '../components/Title';
 
 export default function Listen(){
     return(
         <div style={{height: "100vh", width: "100vw"}}>
+          <Title title="For Streaming" subheading="Playlists, Podcasts, and Youtube videos for self educating and new insights"/>
               <iframe
                 title="Playlist"
                 width="20%"

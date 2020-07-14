@@ -15,9 +15,15 @@ export default function BlackHistory() {
 
 
   return (
-    <div style={{ height: "100vh", width: "100vw"}}>
+    <div style={{ width: "100vw"}}>
       <Title title="Black History" subheading="Fact of the day: " extra={fact.info} />
-      <Entry title="Title" text="This unit is based on the height of the viewport. This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height"/>
+      
+      <Entry title="Tuskeegee Syphilis Experiment" text="The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service.The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service. The purpose of this study was to observe the natural history of untreated syphilis; the African-American men in the study were only told they were receiving free health care from the Federal government of the United States. "/>  
+      <Entry title="Tuskeegee Syphilis Experiment" text="The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service.The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service. The purpose of this study was to observe the natural history of untreated syphilis; the African-American men in the study were only told they were receiving free health care from the Federal government of the United States. "/>  
+      <Entry title="Tuskeegee Syphilis Experiment" text="The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service.The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service. The purpose of this study was to observe the natural history of untreated syphilis; the African-American men in the study were only told they were receiving free health care from the Federal government of the United States. "/>  
+      <Entry title="Tuskeegee Syphilis Experiment" text="The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service.The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service. The purpose of this study was to observe the natural history of untreated syphilis; the African-American men in the study were only told they were receiving free health care from the Federal government of the United States. "/>  
+      <Entry title="Tuskeegee Syphilis Experiment" text="The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service.The Tuskegee Study of Untreated Syphilis in the African American Male was a clinical study conducted between 1932 and 1972 by the United States Public Health Service. The purpose of this study was to observe the natural history of untreated syphilis; the African-American men in the study were only told they were receiving free health care from the Federal government of the United States. "/>  
+      
     </div>
   );
 }
