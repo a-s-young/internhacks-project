@@ -1,6 +1,5 @@
 import React from 'react';
 import List from "../components/List";
-import Entry from "../components/Entry";
 import Title from '../components/Title';
 
 const data = ["Guide to Allyship",
