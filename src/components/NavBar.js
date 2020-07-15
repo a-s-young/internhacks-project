@@ -14,7 +14,7 @@ export default function NavBar(){
               <div className="LearnBar">
                 <div className="LearnNavHeading">Learn</div>
                 <div className="LearnNavText">
-                  <Link as="a" to="/black_history">Black History</Link>
+                  <Link to="/black_history">Black History</Link>
                   <Link to="/read">Read</Link>
                   <Link to="/watch">Watch</Link>
                   <Link to="/listen">Listen</Link>
