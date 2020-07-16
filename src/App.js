@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import Resources from "./pages/Resources";
 import Petitions from "./pages/Petitions";
-import BlackHistory from "./pages/BlackHistory";
+import History from "./pages/History";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 
@@ -56,9 +56,9 @@ function App() {
             <NavBar />
             <Resources />
           </Route>
-          <Route path="/black_history">
+          <Route path="/history">
             <NavBar />
-            <BlackHistory />
+            <History />
           </Route>
           <Route path="/home">
             <Home />

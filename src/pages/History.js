@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import getDailyFact from "../apis/dailyfact";
 import Title from "../components/Title"
 import Entry from "../components/Entry"
-import blackHistoryEntries from "../apis/blackHistoryEntries"
 
-export default function BlackHistory() {
+import historyEntries from "../apis/historyEntries"
+
+export default function History() {
   const [fact, setFact] = useState({});
 
   useEffect(function dailyFact() {
@@ -13,12 +14,12 @@ export default function BlackHistory() {
     });
   }, []);
 
-  const entries = blackHistoryEntries.map(data => <Entry key={data.id} title={data.title} text={data.info} />)
+  const entries = historyEntries.map(data => <Entry key={data.id} title={data.title} text={data.info} />)
 
   return (
     <div style={{
-      height: "auto",
-      width: "auto"
+      height: "100%",
+      width: "100vw"
     }}>
       <Title title="Black History" subheading="Fact of the day: " extra={fact.info} />
       {entries}

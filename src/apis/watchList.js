@@ -1,11 +1,9 @@
 const watchList = [
-  "Enter link here",
-  "Enter link here",
-  "Enter link here",
-  "Enter link here",
-  "Enter link here",
-  "Enter link here",
-  "Enter link here",
+  {
+    id: 0,
+    heading: "Google",
+    link: "https://www.google.com"
+  },
 
 ]
 

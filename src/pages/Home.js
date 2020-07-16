@@ -17,7 +17,7 @@ export default function Home() {
       <button type="button" className="left">
         <div className="leftcontent">
           <p>if you want to</p>
-          <h1><Link to="/black_history">learn</Link></h1>
+          <h1><Link to="/history">learn</Link></h1>
           <p id="history">history, read, watch, listen</p>
         </div>
       </button>

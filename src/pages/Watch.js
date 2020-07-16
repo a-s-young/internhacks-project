@@ -3,11 +3,11 @@ import Title from "../components/Title";
 import Icon from "../components/Icon"
 import List from "../components/List"
 
-import booksList from "../apis/booksList"
+import movieIcons from "../apis/movieIcons"
 import watchList from "../apis/watchList"
 
 export default function Watch(){
-    const books = booksList.map(book => <Icon title={book.title} name={book.author}
+    const books = movieIcons.map(book => <Icon title={book.title} name={book.author}
       image={book.imgURL} alt={book.imgCap} height="100px" width="100%" />)
 
     return(

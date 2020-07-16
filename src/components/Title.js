@@ -4,7 +4,8 @@ export default function Title(props){
     return(
       <div style={{
         textAlign: "center",
-        margin: "20px auto"
+        margin: "auto 20px",
+        padding: "20px"
       }}>
         <h1 style={{
           fontSize: "64px"
