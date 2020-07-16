@@ -43,7 +43,7 @@
 .LearnBar a:hover{
   color: #A57456;
 }
-
+/*
 .SearchBar {
   display: flex;
   justify-content: flex-end;
@@ -53,7 +53,7 @@
 .SearchBar input {
   margin: 10px 20px 0 0;
 }
-
+*/
 .ActionBar{
   display: flex;
   flex: 1;
