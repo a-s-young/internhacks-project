@@ -22,7 +22,7 @@ export default function NavBar(props){
                   <Link to="/read">Read</Link>
                   <Link to="/watch">Watch</Link>
                   <Link to="/listen">Listen</Link>
-                  {/*<Link to="/resources">More</Link>*/}
+                  <Link to="/resources">More</Link>
                 </div>
               </div>
 
