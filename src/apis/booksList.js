@@ -27,7 +27,6 @@ const booksList = [
     imgURL: "./20200704_214859.jpg",
     imgCap: "Testing"
   },
-
   {
     id: 3,
     title: "Cloudy with a Chance of Meatballs",
@@ -35,15 +34,6 @@ const booksList = [
     imgURL: "./20200704_214859.jpg",
     imgCap: "Testing"
   },
-
-  {
-    id: 3,
-    title: "Cloudy with a Chance of Meatballs",
-    author: "Douglas",
-    imgURL: "./20200704_214859.jpg",
-    imgCap: "Testing"
-  },
-
   {
     id: 3,
     title: "Cloudy with a Chance of Meatballs",
