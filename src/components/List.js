@@ -3,7 +3,7 @@ import "../pages/List.css";
 
 export default function Title(props) {
     const data = props.data;
-    const listItems = data.map((el) => <li><a href={el.link} target="_blank"><h2>{el.heading}</h2></a></li>);
+    const listItems = data.map((el) => <li><a href={el.link}><h2>{el.heading}</h2></a></li>);
     return (
         <div style={{
             display: "flex",
