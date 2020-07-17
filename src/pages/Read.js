@@ -10,7 +10,7 @@ import otherLibrariesList from "../apis/otherLibrariesList"
 export default function Read() {
   const books = bookIcons.map(book => <Icon title={book.title} name={book.author}
                         image={book.imgURL} alt={book.imgCap} link={book.link}
-                        imgHeight="100px" imgWidth="100%" />)
+                        imgHeight="150px" imgWidth="100px" />)
 
   return (
     <div style={{
@@ -21,6 +21,7 @@ export default function Read() {
       <div style={{
         display: "flex",
         justifyContent: "space-evenly",
+        flex: 6
       }}>
         {books}
       </div>

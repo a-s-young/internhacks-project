@@ -2,29 +2,23 @@ const watchList = [
   {
     id: 0,
     heading: "The New Jim Crow",
-    link: "https://www.imdb.com/title/tt12188110/"
+    link: null,
   },
   {
     id: 1,
-    heading: "The New Jim Crow",
-    link: "https://www.imdb.com/title/tt12188110/"
+    heading: "Notes of a Native Son",
+    link: null
   },
   {
     id: 2,
-    heading: "The New Jim Crow",
-    link: "https://www.imdb.com/title/tt12188110/"
+    heading: "Discourse on Colonialism",
+    link: null,
   },
   {
     id: 3,
-    heading: "The New Jim Crow",
-    link: "https://www.imdb.com/title/tt12188110/"
+    heading: "Between the World and Me",
+    link: null,
   },
-  {
-    id: 4,
-    heading: "The New Jim Crow",
-    link: "https://www.imdb.com/title/tt12188110/"
-  },
-
 ]
 
 export default watchList
