@@ -16,7 +16,6 @@ export default function Read() {
       <div style={{
         display: "flex",
         justifyContent: "space-evenly",
-        flexWrap: "wrap",
       }}>
         {books}
       </div>
